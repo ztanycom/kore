@@ -1,36 +1,48 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="源文件">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="Kore">
+      <UniqueIdentifier>{3617887C-224E-890D-CB3A-6F10B750050F}</UniqueIdentifier>
     </Filter>
-    <Filter Include="头文件">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="资源文件">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Kore\Events">
+      <UniqueIdentifier>{5ACA009F-C67F-7994-4F74-736BBB287098}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Kore\Core.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
+    <ClInclude Include="src\Kore.h" />
     <ClInclude Include="src\Kore\Application.h">
-      <Filter>头文件</Filter>
+      <Filter>Kore</Filter>
     </ClInclude>
-    <ClInclude Include="src\Kore.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="src\Kore\Core.h">
+      <Filter>Kore</Filter>
     </ClInclude>
     <ClInclude Include="src\Kore\EntryPoint.h">
-      <Filter>头文件</Filter>
+      <Filter>Kore</Filter>
     </ClInclude>
+    <ClInclude Include="src\Kore\Events\ApplicationEvent.h">
+      <Filter>Kore\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kore\Events\Event.h">
+      <Filter>Kore\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kore\Events\KeyEvent.h">
+      <Filter>Kore\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kore\Events\MouseEvent.h">
+      <Filter>Kore\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kore\Log.h">
+      <Filter>Kore</Filter>
+    </ClInclude>
+    <ClInclude Include="src\krpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Kore\Application.cpp">
-      <Filter>源文件</Filter>
+      <Filter>Kore</Filter>
     </ClCompile>
+    <ClCompile Include="src\Kore\Log.cpp">
+      <Filter>Kore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\krpch.cpp" />
   </ItemGroup>
 </Project>

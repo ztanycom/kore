@@ -2,8 +2,10 @@
 
 #include "Core.h"
 
+#include "Events/Event.h"
+
 namespace Kore {
-	class Kore_API Application
+	class KORE_API Application
 	{
 	public:
 		Application();
